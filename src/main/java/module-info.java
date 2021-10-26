@@ -9,4 +9,6 @@ module com.studenti.uninsubria.centrivaccinali {
 
     opens com.studenti.uninsubria.centrivaccinali to javafx.fxml;
     exports com.studenti.uninsubria.centrivaccinali;
+    exports com.studenti.uninsubria.centrivaccinali.controller;
+    opens com.studenti.uninsubria.centrivaccinali.controller to javafx.fxml;
 }
