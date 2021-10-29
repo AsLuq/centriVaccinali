@@ -7,12 +7,15 @@ public class EventiAvversiModel {
     private int idEventoAvverso;
     private String nome;
 
-    public int getIdEventoAvverso() {
-        return idEventoAvverso;
+    public EventiAvversiModel() {
     }
 
-    public void setIdEventoAvverso(int idEventoAvverso) {
-        this.idEventoAvverso = idEventoAvverso;
+    public EventiAvversiModel(String nome) {
+        this.nome = nome;
+    }
+
+    public int getIdEventoAvverso() {
+        return idEventoAvverso;
     }
 
     public String getNome() {

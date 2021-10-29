@@ -7,12 +7,15 @@ public class TipoVaccinoModel {
     private int idTipoVaccino;
     private String nome;
 
-    public int getIdTipoVaccino() {
-        return idTipoVaccino;
+    public TipoVaccinoModel() {
     }
 
-    public void setIdTipoVaccino(int idTipoVaccino) {
-        this.idTipoVaccino = idTipoVaccino;
+    public TipoVaccinoModel(String nome) {
+        this.nome = nome;
+    }
+
+    public int getIdTipoVaccino() {
+        return idTipoVaccino;
     }
 
     public String getNome() {

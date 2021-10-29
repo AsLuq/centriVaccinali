@@ -7,12 +7,15 @@ public class TipologiaCentroVaccinaleModel {
     private int idTipologiaCentroVaccinale;
     private String nome;
 
-    public int getIdTipologiaCentroVaccinale() {
-        return idTipologiaCentroVaccinale;
+    public TipologiaCentroVaccinaleModel() {
     }
 
-    public void setIdTipologiaCentroVaccinale(int idTipologiaCentroVaccinale) {
-        this.idTipologiaCentroVaccinale = idTipologiaCentroVaccinale;
+    public TipologiaCentroVaccinaleModel(String nome) {
+        this.nome = nome;
+    }
+
+    public int getIdTipologiaCentroVaccinale() {
+        return idTipologiaCentroVaccinale;
     }
 
     public String getNome() {

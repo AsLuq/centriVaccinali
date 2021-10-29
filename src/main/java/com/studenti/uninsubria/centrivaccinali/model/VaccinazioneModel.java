@@ -8,6 +8,15 @@ public class VaccinazioneModel {
     private int userID;
     private int idTipoVaccino;
 
+    public VaccinazioneModel() {
+    }
+
+    public VaccinazioneModel(int idVaccinazione, int userID, int idTipoVaccino) {
+        this.idVaccinazione = idVaccinazione;
+        this.userID = userID;
+        this.idTipoVaccino = idTipoVaccino;
+    }
+
     public int getIdVaccinazione() {
         return idVaccinazione;
     }

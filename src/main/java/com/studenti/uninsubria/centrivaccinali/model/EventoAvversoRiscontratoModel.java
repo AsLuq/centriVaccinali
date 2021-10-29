@@ -10,12 +10,18 @@ public class EventoAvversoRiscontratoModel {
     private int userId;
     private int idEventoAvverso;
 
-    public int getIdEventoAvversoRiscontrato() {
-        return idEventoAvversoRiscontrato;
+    public EventoAvversoRiscontratoModel() {
     }
 
-    public void setIdEventoAvversoRiscontrato(int idEventoAvversoRiscontrato) {
-        this.idEventoAvversoRiscontrato = idEventoAvversoRiscontrato;
+    public EventoAvversoRiscontratoModel(int severita, String noteAggiuntive, int userId, int idEventoAvverso) {
+        this.severita = severita;
+        this.noteAggiuntive = noteAggiuntive;
+        this.userId = userId;
+        this.idEventoAvverso = idEventoAvverso;
+    }
+
+    public int getIdEventoAvversoRiscontrato() {
+        return idEventoAvversoRiscontrato;
     }
 
     public int getSeverita() {

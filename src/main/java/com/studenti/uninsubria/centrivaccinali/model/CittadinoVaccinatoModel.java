@@ -15,14 +15,22 @@ public class CittadinoVaccinatoModel {
     private String cognome;
     private String mail;
     private String password;
+
+    public CittadinoVaccinatoModel() {
+    }
+
+    public CittadinoVaccinatoModel(String nome, String cognome, String mail, String password, String cf) {
+        this.nome = nome;
+        this.cognome = cognome;
+        this.mail = mail;
+        this.password = password;
+        this.cf = cf;
+    }
+
     private String cf;
 
     public int getUserId() {
         return userId;
-    }
-
-    public void setUserId(int userId) {
-        this.userId = userId;
     }
 
     public String getNome() {
