@@ -9,27 +9,16 @@ import java.sql.DriverManager;
  */
 public class ConnectionFactory {
 
-    public static void main(String[] args) throws IOException {
-        new ConnectionFactory();
-    }
+    private ServerInformation serverInformation;
 
-    public ConnectionFactory() throws IOException {
-        ServerInformation serverInfo = new ServerInformation();
-        if(tryConnection(serverInfo))
-            System.out.println("Server connesso!");
-        else
-            System.out.println("Errore durante la connessione al server");
-
-    }
-
-    public static Boolean verifyUser(String username, String password) throws IOException {
-        ServerInformation serverInfo = new ServerInformation();
-        return serverInfo.getUsername().equals(username) && serverInfo.getPassword().equals(password);
+    public ConnectionFactory(String username, String password) throws IOException {
+        serverInformation = new ServerInformation();
+        serverInformation.setUsername(username);
+        serverInformation.setPassword(password);
     }
 
 
-
-    public Boolean tryConnection(ServerInformation serverInformation){
+    public Boolean tryConnection(){
         Connection conn = null;
         try {
             Class.forName("org.postgresql.Driver");

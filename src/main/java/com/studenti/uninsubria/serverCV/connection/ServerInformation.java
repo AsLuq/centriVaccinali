@@ -40,8 +40,8 @@ public class ServerInformation {
             setIpServer(prop.getProperty("IP_SERVER"));
             setPort(Integer.parseInt(prop.getProperty("PORT")));
             setDb(prop.getProperty("DB"));
-            setUsername(prop.getProperty("USER"));
-            setPassword(prop.getProperty("PSW"));
+            //setUsername(prop.getProperty("USER"));
+            //setPassword(prop.getProperty("PSW"));
 
             System.out.print(toString());
 
@@ -53,7 +53,7 @@ public class ServerInformation {
         }
     }
 
-    private void setUsername(String username) {
+    public void setUsername(String username) {
         this.username = username;
     }
 
@@ -65,7 +65,7 @@ public class ServerInformation {
         this.ipServer = ipServer;
     }
 
-    private void setPassword(String password) {
+    public void setPassword(String password) {
         Password = password;
     }
 
