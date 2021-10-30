@@ -98,7 +98,7 @@
                         <id>default-cli</id>
                         <configuration>
                             <mainClass>
-                                com.studenti.uninsubria.centrivaccinali/com.studenti.uninsubria.centrivaccinali.CentriVaccinali
+                                com.studenti.uninsubria.centrivaccinali/com.studenti.uninsubria.clientCV.CentriVaccinali
                             </mainClass>
                         </configuration>
                     </execution>

@@ -1,44 +1,29 @@
-package com.studenti.uninsubria.centrivaccinali.model;
+package com.studenti.uninsubria.clientCV.model;
 
 /**
  * author luqmanasghar
  */
-public class VaccinazioneModel {
-    private int idVaccinazione;
-    private int userID;
-    private int idTipoVaccino;
+public class EventiAvversiModel {
+    private int idEventoAvverso;
+    private String nome;
 
-    public VaccinazioneModel() {
+    public EventiAvversiModel() {
     }
 
-    public VaccinazioneModel(int idVaccinazione, int userID, int idTipoVaccino) {
-        this.idVaccinazione = idVaccinazione;
-        this.userID = userID;
-        this.idTipoVaccino = idTipoVaccino;
+    public EventiAvversiModel(String nome) {
+        this.nome = nome;
     }
 
-    public int getIdVaccinazione() {
-        return idVaccinazione;
+    public int getIdEventoAvverso() {
+        return idEventoAvverso;
     }
 
-    public void setIdVaccinazione(int idVaccinazione) {
-        this.idVaccinazione = idVaccinazione;
+    public String getNome() {
+        return nome;
     }
 
-    public int getUserID() {
-        return userID;
-    }
-
-    public void setUserID(int userID) {
-        this.userID = userID;
-    }
-
-    public int getIdTipoVaccino() {
-        return idTipoVaccino;
-    }
-
-    public void setIdTipoVaccino(int idTipoVaccino) {
-        this.idTipoVaccino = idTipoVaccino;
+    public void setNome(String nome) {
+        this.nome = nome;
     }
 
     /**
@@ -108,10 +93,9 @@ public class VaccinazioneModel {
 
     @Override
     public String toString() {
-        return "VaccinazioneModel{" +
-                "idVaccinazione=" + idVaccinazione +
-                ", userID=" + userID +
-                ", idTipoVaccino=" + idTipoVaccino +
+        return "EventiAvversiModel{" +
+                "idEventoAvverso=" + idEventoAvverso +
+                ", nome='" + nome + '\'' +
                 '}';
     }
 }

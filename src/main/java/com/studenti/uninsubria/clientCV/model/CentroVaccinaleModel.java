@@ -1,6 +1,4 @@
-package com.studenti.uninsubria.centrivaccinali.model;
-
-import java.util.HashMap;
+package com.studenti.uninsubria.clientCV.model;
 
 /**
  * @author luqmanasghar

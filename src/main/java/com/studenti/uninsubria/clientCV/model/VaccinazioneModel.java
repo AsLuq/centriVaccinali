@@ -1,76 +1,44 @@
-package com.studenti.uninsubria.centrivaccinali.model;
-
-import java.lang.ref.Cleaner;
-import java.lang.ref.PhantomReference;
-import java.lang.ref.Reference;
-import java.lang.ref.WeakReference;
-import java.util.HashMap;
+package com.studenti.uninsubria.clientCV.model;
 
 /**
  * author luqmanasghar
  */
-public class CittadinoVaccinatoModel {
-    private int userId;
-    private String nome;
-    private String cognome;
-    private String mail;
-    private String password;
+public class VaccinazioneModel {
+    private int idVaccinazione;
+    private int userID;
+    private int idTipoVaccino;
 
-    public CittadinoVaccinatoModel() {
+    public VaccinazioneModel() {
     }
 
-    public CittadinoVaccinatoModel(String nome, String cognome, String mail, String password, String cf) {
-        this.nome = nome;
-        this.cognome = cognome;
-        this.mail = mail;
-        this.password = password;
-        this.cf = cf;
+    public VaccinazioneModel(int idVaccinazione, int userID, int idTipoVaccino) {
+        this.idVaccinazione = idVaccinazione;
+        this.userID = userID;
+        this.idTipoVaccino = idTipoVaccino;
     }
 
-    private String cf;
-
-    public int getUserId() {
-        return userId;
+    public int getIdVaccinazione() {
+        return idVaccinazione;
     }
 
-    public String getNome() {
-        return nome;
+    public void setIdVaccinazione(int idVaccinazione) {
+        this.idVaccinazione = idVaccinazione;
     }
 
-    public void setNome(String nome) {
-        this.nome = nome;
+    public int getUserID() {
+        return userID;
     }
 
-    public String getCognome() {
-        return cognome;
+    public void setUserID(int userID) {
+        this.userID = userID;
     }
 
-    public void setCognome(String cognome) {
-        this.cognome = cognome;
+    public int getIdTipoVaccino() {
+        return idTipoVaccino;
     }
 
-    public String getMail() {
-        return mail;
-    }
-
-    public void setMail(String mail) {
-        this.mail = mail;
-    }
-
-    public String getPassword() {
-        return password;
-    }
-
-    public void setPassword(String password) {
-        this.password = password;
-    }
-
-    public String getCf() {
-        return cf;
-    }
-
-    public void setCf(String cf) {
-        this.cf = cf;
+    public void setIdTipoVaccino(int idTipoVaccino) {
+        this.idTipoVaccino = idTipoVaccino;
     }
 
     /**
@@ -140,13 +108,10 @@ public class CittadinoVaccinatoModel {
 
     @Override
     public String toString() {
-        return "CittadinoVaccinatoModel{" +
-                "userId=" + userId +
-                ", nome='" + nome + '\'' +
-                ", cognome='" + cognome + '\'' +
-                ", mail='" + mail + '\'' +
-                ", password='" + password + '\'' +
-                ", cf='" + cf + '\'' +
+        return "VaccinazioneModel{" +
+                "idVaccinazione=" + idVaccinazione +
+                ", userID=" + userID +
+                ", idTipoVaccino=" + idTipoVaccino +
                 '}';
     }
 }

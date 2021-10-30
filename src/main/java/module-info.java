@@ -6,9 +6,11 @@ module com.studenti.uninsubria.centrivaccinali {
     requires com.dlsc.formsfx;
     requires validatorfx;
     requires org.kordamp.bootstrapfx.core;
+    requires java.sql;
+    requires postgresql;
 
-    opens com.studenti.uninsubria.centrivaccinali to javafx.fxml;
-    exports com.studenti.uninsubria.centrivaccinali;
-    exports com.studenti.uninsubria.centrivaccinali.controller;
-    opens com.studenti.uninsubria.centrivaccinali.controller to javafx.fxml;
+    opens com.studenti.uninsubria.clientCV to javafx.fxml;
+    exports com.studenti.uninsubria.clientCV;
+    exports com.studenti.uninsubria.clientCV.controller;
+    opens com.studenti.uninsubria.clientCV.controller to javafx.fxml;
 }

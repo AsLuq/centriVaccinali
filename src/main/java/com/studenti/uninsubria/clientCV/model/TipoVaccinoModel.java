@@ -1,21 +1,21 @@
-package com.studenti.uninsubria.centrivaccinali.model;
+package com.studenti.uninsubria.clientCV.model;
 
 /**
  * author luqmanasghar
  */
-public class TipologiaCentroVaccinaleModel {
-    private int idTipologiaCentroVaccinale;
+public class TipoVaccinoModel {
+    private int idTipoVaccino;
     private String nome;
 
-    public TipologiaCentroVaccinaleModel() {
+    public TipoVaccinoModel() {
     }
 
-    public TipologiaCentroVaccinaleModel(String nome) {
+    public TipoVaccinoModel(String nome) {
         this.nome = nome;
     }
 
-    public int getIdTipologiaCentroVaccinale() {
-        return idTipologiaCentroVaccinale;
+    public int getIdTipoVaccino() {
+        return idTipoVaccino;
     }
 
     public String getNome() {
@@ -93,8 +93,8 @@ public class TipologiaCentroVaccinaleModel {
 
     @Override
     public String toString() {
-        return "TipologiaCentroVaccinaleModel{" +
-                "idTipologiaCentroVaccinale=" + idTipologiaCentroVaccinale +
+        return "TipoVaccinoModel{" +
+                "idTipoVaccino=" + idTipoVaccino +
                 ", nome='" + nome + '\'' +
                 '}';
     }

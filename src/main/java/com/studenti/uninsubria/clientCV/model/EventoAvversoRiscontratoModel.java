@@ -1,4 +1,4 @@
-package com.studenti.uninsubria.centrivaccinali.model;
+package com.studenti.uninsubria.clientCV.model;
 
 /**
  * author luqmanasghar
