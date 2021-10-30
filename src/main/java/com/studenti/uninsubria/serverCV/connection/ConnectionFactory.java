@@ -9,7 +9,7 @@ import java.sql.DriverManager;
  */
 public class ConnectionFactory {
 
-    private ServerInformation serverInformation;
+    private final ServerInformation serverInformation;
 
     public ConnectionFactory(String username, String password) throws IOException {
         serverInformation = new ServerInformation();
