@@ -2,26 +2,41 @@ package com.studenti.uninsubria.clientCV.model;
 
 /**
  * @author luqmanasghar
+ * @author Cristian Zuffellato
  */
+
 public class CentroVaccinaleModel {
+
+    // <editor-fold desc="Attributi">
+
     private int idCentroVaccinale;
     private String nome;
     private String provincia;
     private String comune;
     private String via;
     private String cap;
+    private TipoVaccinoModel tipoVaccinoModel;
+
+    // </editor-fold>
+
+    // <editor-fold desc="Costruttori">
 
     public CentroVaccinaleModel() {
     }
 
     public CentroVaccinaleModel(String nome, String provincia, String comune, String via,
-                                String cap) {
+                                String cap, TipoVaccinoModel tipoVaccinoModel) {
         this.nome = nome;
         this.provincia = provincia;
         this.comune = comune;
         this.via = via;
         this.cap = cap;
+        this.tipoVaccinoModel = tipoVaccinoModel;
     }
+
+    // </editor-fold>
+
+    // <editor-fold desc="Getter & Setters">
 
     public int getIdCentroVaccinale() {
         return idCentroVaccinale;
@@ -66,6 +81,18 @@ public class CentroVaccinaleModel {
     public void setCap(String cap) {
         this.cap = cap;
     }
+
+    public TipoVaccinoModel getTipoVaccinoModel() {
+        return tipoVaccinoModel;
+    }
+
+    public void setTipoVaccinoModel(TipoVaccinoModel tipoVaccinoModel) {
+        this.tipoVaccinoModel = tipoVaccinoModel;
+    }
+
+    // </editor-fold>
+
+    // <editor-fold desc="Altri metodi">
 
     /**
      * Creates and returns a copy of this object. The precise meaning of "copy" may
@@ -141,4 +168,7 @@ public class CentroVaccinaleModel {
                 + ", provincia='" + provincia + '\'' + ", comune='" + comune + '\'' + ", via='" + via + '\'' + ", cap='"
                 + cap + '\'' + '}';
     }
+
+    // </editor-fold>
+
 }
