@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="500.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.studenti.uninsubria.clientCV.controller.RegistrazioneCittadinoController">
+   <top>
+      <Label id="lblTitle" alignment="CENTER" text="REGISTRAZIONE" BorderPane.alignment="CENTER">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font>
+         <BorderPane.margin>
+            <Insets top="20.0" />
+         </BorderPane.margin>
+      </Label>
+   </top>
+   <right>
+      <AnchorPane prefHeight="357.0" prefWidth="165.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="lblCFerror" layoutX="4.0" layoutY="102.0" text="Codice fiscale non valido." textFill="RED" visible="false" />
+            <Label fx:id="lblEmailError" layoutY="154.0" text="Indirizzo e-mail non valido." textFill="RED" visible="false" />
+         </children>
+      </AnchorPane>
+   </right>
+   <left>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button id="btnRegistrati" fx:id="btnRegistrati" layoutX="338.0" layoutY="291.0" mnemonicParsing="false" onMouseClicked="#registraCittadino" text="Registrati" />
+            <Button id="btnAnnulla" fx:id="btnAnnulla" layoutX="212.0" layoutY="291.0" mnemonicParsing="false" text="Annulla" />
+            <Label id="lblCognome" layoutX="296.0" layoutY="33.0" prefHeight="17.0" prefWidth="55.0" text="Cognome" />
+            <Label id="lblNome" layoutX="170.0" layoutY="33.0" text="Nome" />
+            <TextField id="txtNome" fx:id="txtNome" alignment="TOP_LEFT" layoutX="171.0" layoutY="50.0" prefHeight="25.0" prefWidth="116.0" promptText="Nome" />
+            <TextField id="txtCognome" fx:id="txtCognome" layoutX="296.0" layoutY="50.0" prefHeight="25.0" prefWidth="112.0" promptText="Cognome" />
+            <TextField id="txtCodiceFiscale" fx:id="txtCodiceFiscale" layoutX="171.0" layoutY="99.0" onInputMethodTextChanged="#CfTextChanged" prefHeight="25.0" prefWidth="238.0" promptText="Inserisci il tuo codice fiscale" />
+            <TextField id="txtEmail" fx:id="txtEmail" layoutX="171.0" layoutY="147.0" onInputMethodTextChanged="#EmailTextChanged" prefHeight="25.0" prefWidth="240.0" promptText="Inserisci il tuo indirizzo e-mail" />
+            <Label id="lblCodiceFiscale" layoutX="171.0" layoutY="82.0" prefHeight="17.0" prefWidth="81.0" text="Codice fiscale" />
+            <Label id="lblEmail" layoutX="172.0" layoutY="130.0" text="Indirizzo posta elettronica" />
+            <TextField id="txtUsername" fx:id="txtUsername" layoutX="171.0" layoutY="200.0" prefHeight="25.0" prefWidth="134.0" promptText="Scegli il tuo username" />
+            <Label id="lblUsername" layoutX="172.0" layoutY="183.0" prefHeight="17.0" prefWidth="59.0" text="Username" />
+            <Label id="lblPassword" layoutX="313.0" layoutY="183.0" text="Password" />
+            <TextField id="txtIDvaccinazione" fx:id="txtIDvaccinazione" alignment="CENTER" layoutX="170.0" layoutY="250.0" prefHeight="25.0" prefWidth="285.0" promptText="Inserisci l' ID fornito al momento della vaccinazione">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </TextField>
+            <Label id="lblIDvaccinazione" alignment="TOP_LEFT" layoutX="171.0" layoutY="233.0" text="ID vaccinazione" />
+            <Label id="lblDesc" layoutX="173.0" layoutY="6.0" text="Compila tutti i campi per effettuare la registrazione." />
+            <PasswordField id="txtPassword" fx:id="txtPassword" layoutX="313.0" layoutY="200.0" prefHeight="25.0" prefWidth="142.0" promptText="Scegli la tua password" />
+         </children>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+      </AnchorPane>
+   </left>
+</BorderPane>
