@@ -1,21 +1,34 @@
 package com.studenti.uninsubria.clientCV.model;
 
 /**
- * author luqmanasghar
+ * @author luqmanasghar
  */
-public class TipoVaccinoModel {
+
+public class TipoVaccinoModel{
+
+    // <editor-fold desc="Attributi">
+
     private int idTipoVaccino;
     private String nome;
 
-    public TipoVaccinoModel() {
-    }
+    // </editor-fold>
+
+    // <editor-fold desc="Costruttori">
 
     public TipoVaccinoModel(String nome) {
         this.nome = nome;
     }
 
+    // </editor-fold>
+
+    // <editor-fold desc="Getter & Setters">
+
     public int getIdTipoVaccino() {
         return idTipoVaccino;
+    }
+
+    public void setIdTipoVaccino(int idTipoVaccino) {
+        this.idTipoVaccino = idTipoVaccino;
     }
 
     public String getNome() {
@@ -25,6 +38,10 @@ public class TipoVaccinoModel {
     public void setNome(String nome) {
         this.nome = nome;
     }
+
+    // </editor-fold>
+
+    // <editor-fold desc="Altri metodi">
 
     /**
      * Creates and returns a copy of this object.  The precise meaning
@@ -86,6 +103,7 @@ public class TipoVaccinoModel {
      *                                    be cloned.
      * @see Cloneable
      */
+
     @Override
     protected Object clone() throws CloneNotSupportedException {
         return super.clone();
@@ -98,4 +116,7 @@ public class TipoVaccinoModel {
                 ", nome='" + nome + '\'' +
                 '}';
     }
+
+    // </editor-fold>
+
 }
