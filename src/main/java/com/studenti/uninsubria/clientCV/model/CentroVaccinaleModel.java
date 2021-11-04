@@ -11,11 +11,12 @@ public class CentroVaccinaleModel {
 
     private int idCentroVaccinale;
     private String nome;
+    private String via;
+    private int numeroCivico;
     private String provincia;
     private String comune;
-    private String via;
     private String cap;
-    private TipoVaccinoModel tipoVaccinoModel;
+    private TipologiaCentroVaccinaleModel tipologiaCentroVaccinaleModel;
 
     // </editor-fold>
 
@@ -24,73 +25,166 @@ public class CentroVaccinaleModel {
     public CentroVaccinaleModel() {
     }
 
-    public CentroVaccinaleModel(String nome, String provincia, String comune, String via,
-                                String cap, TipoVaccinoModel tipoVaccinoModel) {
+    public CentroVaccinaleModel(String nome, String via, int numeroCivico, String comune, String provincia,
+                                String cap, TipologiaCentroVaccinaleModel tipologiaCentroVaccinaleModel) {
         this.nome = nome;
-        this.provincia = provincia;
-        this.comune = comune;
         this.via = via;
+        this.numeroCivico = numeroCivico;
+        this.comune = comune;
+        this.provincia = provincia;
         this.cap = cap;
-        this.tipoVaccinoModel = tipoVaccinoModel;
+        this.tipologiaCentroVaccinaleModel = tipologiaCentroVaccinaleModel;
     }
 
     // </editor-fold>
 
     // <editor-fold desc="Getter & Setters">
 
+    /**
+     * Legge IdCentroVacinale
+     * @return idCentroVaccinale
+     */
+
     public int getIdCentroVaccinale() {
         return idCentroVaccinale;
     }
+
+    /**
+     * Assegna IdCentrovaccinale
+     * @param idCentroVaccinale
+     */
+
+    public void setIdCentroVaccinale(int idCentroVaccinale) {
+        this.idCentroVaccinale = idCentroVaccinale;
+    }
+
+    /**
+     * Legge NomeCentroVaccinale
+     * @return nome
+     */
 
     public String getNome() {
         return nome;
     }
 
+    /**
+     * Assegna NomeCentroVaccinale
+     * @param nome
+     */
+
     public void setNome(String nome) {
         this.nome = nome;
     }
+
+    /**
+     * Legge Provincia
+     * @return provincia
+     */
 
     public String getProvincia() {
         return provincia;
     }
 
+    /**
+     * Assegna Provincia
+     * @param provincia
+     */
+
     public void setProvincia(String provincia) {
         this.provincia = provincia;
     }
+
+    /**
+     * Legge Comune
+     * @return comune
+     */
 
     public String getComune() {
         return comune;
     }
 
+    /**
+     * Assegna Comune
+     * @param comune
+     */
+
     public void setComune(String comune) {
         this.comune = comune;
     }
+
+    /**
+     * Legge Via
+     * @return via
+     */
 
     public String getVia() {
         return via;
     }
 
+    /**
+     * Assegna Via
+     * @param via
+     */
+
     public void setVia(String via) {
         this.via = via;
     }
+
+    /**
+     * Legge Cap
+     * @return cap
+     */
 
     public String getCap() {
         return cap;
     }
 
+    /**
+     * Assegna Cap
+     * @param cap
+     */
+
     public void setCap(String cap) {
         this.cap = cap;
     }
 
-    public TipoVaccinoModel getTipoVaccinoModel() {
-        return tipoVaccinoModel;
+    /**
+     * Legge TipologiaCentroVaccinale
+     * @return tipologiaCentroVaccinaleModel
+     */
+
+    public TipologiaCentroVaccinaleModel getTipologiaCentroVaccinaleModel() {
+        return tipologiaCentroVaccinaleModel;
     }
 
-    public void setTipoVaccinoModel(TipoVaccinoModel tipoVaccinoModel) {
-        this.tipoVaccinoModel = tipoVaccinoModel;
+    /**
+     * Assegna TipologiaCentroVaccinale
+     * @param tipologiaCentroVaccinaleModel
+     */
+
+    public void setTipologiaCentroVaccinaleModel(TipologiaCentroVaccinaleModel tipologiaCentroVaccinaleModel) {
+        this.tipologiaCentroVaccinaleModel = tipologiaCentroVaccinaleModel;
     }
 
-    // </editor-fold>
+    /**
+     * Legge NumeroCivico
+     * @return numeroCivico
+     */
+
+    public int getNumeroCivico() {
+        return numeroCivico;
+    }
+
+    /**
+     * Assegna NumeroCivico
+     * @param numeroCivico
+     */
+
+    public void setNumeroCivico(int numeroCivico) {
+        this.numeroCivico = numeroCivico;
+    }
+
+// </editor-fold>
 
     // <editor-fold desc="Altri metodi">
 
