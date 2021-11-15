@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane fx:id="bPaneRegistrazione" prefHeight="375.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.studenti.uninsubria.clientCV.controller.RegistrazioneCentroVaccinaleController">
+   <left>
+      <AnchorPane prefHeight="400.0" prefWidth="500.0" BorderPane.alignment="CENTER">
+         <AnchorPane prefHeight="375.0" prefWidth="500.0">
+            <Label fx:id="lblNomeCentroVaccinale" layoutX="86.0" layoutY="44.0" text="Nome: " />
+            <Label fx:id="lblQualificatore" layoutX="86.0" layoutY="84.0" text="Qualificatore: " />
+            <Label fx:id="lblNumeroCivico" layoutX="86.0" layoutY="123.0" prefHeight="18.0" prefWidth="49.0" text="N.Civico: " />
+            <Label fx:id="lblComune" layoutX="86.0" layoutY="162.0" text="Comune:" />
+            <Label fx:id="lblProvincia" layoutX="84.0" layoutY="199.0" text="Provincia: " />
+            <Label fx:id="lblCap" layoutX="86.0" layoutY="235.0" prefWidth="24.0" text="Cap:" />
+            <Label fx:id="lblTipologia" layoutX="86.0" layoutY="272.0" text="Tipologia:" />
+            <TextField fx:id="txtFieldNome" layoutX="124.0" layoutY="40.0" prefHeight="26.0" prefWidth="290.0" promptText="Nome" />
+            <TextField fx:id="txtFieldNumeroCivico" layoutX="136.0" layoutY="119.0" prefHeight="26.0" prefWidth="100.0" promptText="N.Civico" />
+            <TextField fx:id="txtFieldComune" layoutX="136.0" layoutY="158.0" promptText="Comune" />
+            <TextField fx:id="txtFieldProvincia" layoutX="137.0" layoutY="195.0" prefHeight="26.0" prefWidth="62.0" promptText="Provincia" />
+            <TextField fx:id="txtFieldCap" layoutX="114.0" layoutY="231.0" prefHeight="26.0" prefWidth="56.0" promptText="Cap" />
+            <Button fx:id="btnAnnulla" layoutX="178.0" layoutY="313.0" mnemonicParsing="false" text="Annulla" />
+            <Button fx:id="btnRegistra" layoutX="302.0" layoutY="313.0" mnemonicParsing="false" onMouseClicked="#registraCentroVaccinale" text="Registra" />
+            <Label fx:id="lblCapNonValido" layoutX="193.0" layoutY="199.0" text="Cap non valido!" textFill="RED" visible="false" />
+            <ComboBox fx:id="cBoxQualificatore" cache="true" layoutX="162.0" layoutY="80.0" prefWidth="150.0" promptText="Qualificatore" />
+            <ComboBox fx:id="cBoxTipologia" layoutX="142.0" layoutY="268.0" prefWidth="150.0" promptText="Tipologia" />
+            <Label layoutX="120.0" layoutY="14.0" text="Compila tutti i campi per effetuare la registrazione" textFill="RED" visible="false" />
+            <Label fx:id="lblProvinciaNonValida" layoutX="217.0" layoutY="199.0" text="Provincia Non Valida" textFill="RED" visible="false" />
+            <Label fx:id="lblCivicoNonValido" layoutX="243.0" layoutY="123.0" text="Numero Civico Non Valido" textFill="RED" visible="false" />
+         </AnchorPane>
+      </AnchorPane>
+   </left>
+   <top>
+      <Label fx:id="lblRegistrazione" alignment="CENTER" text="Registrazione Centro Vaccinale" BorderPane.alignment="CENTER">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font>
+      </Label>
+   </top>
+</BorderPane>
