@@ -35,7 +35,6 @@ public class RegistrazioneCentroVaccinaleController implements Initializable {
                 "Corso"};
         cBoxQualificatore.getItems().addAll(qualificatore);
 
-
         String[] tipologia = {
                 TipologiaCentroVaccinaleModel.AZIENDALE.toString(),
                 TipologiaCentroVaccinaleModel.HUB.toString(),
